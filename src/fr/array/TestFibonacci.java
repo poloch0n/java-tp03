@@ -12,7 +12,7 @@ public class TestFibonacci {
 		exercice();
 	}
 	
-
+	/** fonction courante */
 	public static void exercice() {
 		showMainMenu();
 		
@@ -28,6 +28,7 @@ public class TestFibonacci {
 		exercice();
 	}
 	
+	/** calcul de fibonacci */
 	private static int calculFibonacci(Integer rang) {
 		int n1=1, n2 = 1, n3 = 0;
 		
@@ -40,11 +41,12 @@ public class TestFibonacci {
 		
 	}
 
+	/** Affichage du menu principale */
 	private static void showMainMenu() {
 		System.out.println("Choisissez un rang N");
 	}
 	
-	// Récupération du nombre tapé depuis le menu
+	/** Récupération du nombre tapé depuis le menu */
 	private static int getNumberFromMenu() {
 		questionUser = new Scanner(System.in);
 		try {
