@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Exercice4 {
 
 	private static Scanner questionUser;
-	private static int [] arrays;
+	private static long [] arrays;
 	
 	public static void main(String [] args) {
 		arrays = null;
@@ -35,7 +35,7 @@ public class Exercice4 {
 			// afficher le tableau
 			if(arrays != null) {
 				System.out.println("\r\nL'état actuel du tableau est :");
-				for (int element : arrays) {
+				for (long element : arrays) {
 					System.out.print( element + " ");
 				}
 				System.out.println("\r\n");
@@ -50,10 +50,10 @@ public class Exercice4 {
 		exercice();
 	}
 	
-	private static int[] ajustArray(int[] arrayInit, Integer integer) {
-		int[] arrayTemporary;
+	private static long[] ajustArray(long[] arrayInit, int integer) {
+		long[] arrayTemporary;
 		if(arrayInit != null) {
-			arrayTemporary = new int[arrayInit.length + 1];
+			arrayTemporary = new long[arrayInit.length + 1];
 			if(arrayInit.length != 0) {
 				for (int i = 0; i < arrayInit.length; i++) {
 					arrayTemporary[i] = arrayInit[i];
@@ -61,7 +61,7 @@ public class Exercice4 {
 			}
 			arrayTemporary[arrayInit.length] = integer;
 		} else {
-			arrayTemporary = new int[1];
+			arrayTemporary = new long[1];
 			arrayTemporary[0] = integer;
 		}
 		return arrayTemporary;
